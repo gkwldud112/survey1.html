@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>모씨 설문지</title>
+  </head>
+<style>
+  body {
+        height: 100%;
+        font-weight:border;
+
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+      }
+
+
+
+  #input1 { width:300px;
+            height:50px;
+            border-top:none;
+            border-left:none;
+            border-right:none;
+            border-bottom:3px solid black;
+  }
+
+  #input2 { width:100px;
+            height:55px; border-top:none;
+            border-left:none;
+            border-right:none;
+            border-bottom:3px solid black;
+
+}
+
+</style>
+  <body>
+    <div class="container">
+    <form action="MAILTO:mossi.seoul@gmail.com"
+     method="post">
+      <br>
+      <p> 체크란은 한개만 표시해주시면 됩니다:)</p>
+      <br><br>
+
+       <label>○화기를 대체하시고 빨리(예정일) 받아보시겠습니까?
+         <input  type="checkbox" name="대체/빨리받는다" value="아니오">네</label>
+         <input  type="checkbox" name="대체/빨리받는다" value="네">아니오</label>
+         <br>
+         <br>
+         <label>○화기를 대체하지 않고,예정일 보다 1-2주 정도 뒤에 받아보시겠습니까?
+          <input type="checkbox" name="대체x/늦게받는다" value="아니오">네</label>
+          <input type="checkbox" name="대체x/늦게받는다" value="네">아니오</label>
+    <br>
+    <p>서포터 성명/닉네임 :<input id="input1"  type="text" name="서포터 성명/닉네임" ></p>
+    <p>서포터 이메일 :<input  id="input1" type="text" name="서포터 이메일" ></p>
+    <p>서포터 전화번호 :<input id="input1" type="text" name="서포터 전화번호" ></p>
+    <p>배송 받으실 주소 :<input id="input1" type="text" name="배송 받으실 주소" ></p>
+    <br>
+    <input id="input2" type="submit" color:pink;>
+    </div>
+    </form>
+  </body>
+
+</html>
